@@ -1,0 +1,24 @@
+:root{
+  --accent:#0b7dd6;
+  --muted:#666;
+}
+body{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#fafafa;border-bottom:1px solid #eee}
+.site-header .brand{font-weight:700}
+.site-header nav a{margin-left:16px;text-decoration:none;color:var(--muted)}
+.site-header nav a.active{color:var(--accent);font-weight:600}
+.container{padding:18px 20px}
+.carousel{position:relative;height:320px;overflow:hidden;border-radius:8px}
+.carousel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.carousel img.active{opacity:1}
+.carousel-dots{position:absolute;left:50%;transform:translateX(-50%);bottom:12px;display:flex;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.7);border:0;outline:none}
+.dot.active{background:var(--accent)}
+.reg-form{max-width:480px;background:#fff;padding:16px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.reg-form .field{display:flex;flex-direction:column;margin-bottom:12px}
+.reg-form label{font-size:13px;color:var(--muted);margin-bottom:6px}
+.reg-form input,.reg-form select{padding:8px 10px;border:1px solid #ddd;border-radius:6px}
+.reg-form button{background:var(--accent);color:#fff;padding:10px 14px;border:0;border-radius:6px;cursor:pointer}
+
+.btn-register{background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+.reg-form img{max-width:100%;height:auto;border-radius:6px}
